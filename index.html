@@ -42,6 +42,7 @@
           var mapholder = document.getElementById('map')
           mapholder.style.height = '400px';
           mapholder.style.width = '500px';
+        
           var myOptions = {
           center:latlon,zoom:14,
           mapTypeId:google.maps.MapTypeId.ROADMAP,
@@ -167,9 +168,11 @@
         <br><br>
         <input type="submit" value="Submit">
       </form> 
-      
-      <button onclick="getLocation()">It seems like your a bit lost, click here for some help!</button><br>
-
+      <br>
+      <br>
+      <h2>It seems like your a bit lost</h2>
+      <button onclick="getLocation()">Click here for some help!</button><br>
+    <br>
     </div>
     <div id="footer">
       What are you still doing here?
