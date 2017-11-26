@@ -6,8 +6,23 @@
     <title>
       What are you doing here?
     </title>
-    
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script>
+      function validateForm()
+      {
+      if (document.forms["myForm"]["why"].value==null || document.forms["myForm"]["why"].value=="")
+      {
+      alert("Please select a reason for your visit");
+      return false;
+      }
+      if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+      {
+      alert("Please input your name in the form");
+      return false;
+      }
+      return true;
+      }
+    </script>
   </head>
   
   <body>
@@ -92,11 +107,11 @@
         </iframe>
       
     <h2 id="form">Why did you come here?</h2>
-      <form action="/action_page.php" method="get">
+      <form name="myForm" onsubmit="return validateForm()" >
         <input type="radio" name="why" value="I got lost"> I got lost<br>
         <input type="radio" name="why" value="I'm your stalker"> I'm your stalker<br>
         <input type="radio" name="why" value="I'm here to grade this website"> I'm here to grade this website<br>
-        <input type="radio" name="why" value="Other:"> Other:  <input type="text" name="otherreason">
+        <input type="radio" name="why" value="Other:"> Other:  <input type="text" name="why">
         <br>
         <br>
         Who are you?:<br>
