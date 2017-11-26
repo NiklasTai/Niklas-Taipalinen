@@ -8,6 +8,21 @@
     </title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
+      function allowDrop(ev) {
+          ev.preventDefault();
+      }
+
+      function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+    <script>
       function validateForm()
       {
       if (document.forms["myForm"]["why"].value==null || document.forms["myForm"]["why"].value=="")
@@ -156,6 +171,14 @@
         <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/pTXQ8wU1QKc" frameborder="0" allowfullscreen>
         </iframe>
+    <br>
+      
+    <h2>Genji needs some healing, drag Lucio closer to him:</h2>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="drag1" src="pics/LucioSmall.png" draggable="true" ondragstart="drag(event)" width="250" height="250">
+
       
     <h2 id="form">Why did you come here?</h2>
       <form name="myForm" onsubmit="return validateForm()" >
