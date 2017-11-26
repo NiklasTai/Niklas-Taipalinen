@@ -1,5 +1,5 @@
 body{
-	background: #FFFFFF;
+	background: #808080;
 	}
 
 #wrap{
@@ -7,7 +7,7 @@ body{
 	margin:0px auto 15px auto;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:12px;
-	color:#999999;
+	color:#f2f2f2;
 	
 #header{
 	height:240px;
@@ -56,7 +56,7 @@ body{
 	}
 	
 #content {
-	background-color: #FFFFFF;
+	background-color: #808080;
 	}
 	
 #mainpage {
@@ -80,7 +80,7 @@ body{
 	font-style:italic;}
 	
 h1, h2, h3, h4, h5 {
-	color:#A52A2A;
+	color:#f2f2f2;
 	font-weight:bold;
 	font-family: Arial, Helvetica, sans-serif;
 	}
