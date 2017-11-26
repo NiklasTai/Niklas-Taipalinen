@@ -1,22 +1,22 @@
 body{
-	background: #FFFFFF  url("https://raw.githubusercontent.com/dipaish/www_dkc/master/images/bg.jpg") repeat-x;
+	background: #808080;
 	}
+
 #wrap{
 	width:699px;
 	margin:0px auto 15px auto;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:12px;
-	color:#666666;
+	color:#f2f2f2;
 }
-
-/*Header*/
-
 #header{
-	height:242px;
-	background:url("https://github.com/dipaish/www_dkc/blob/master/images/header.png?raw=true") no-repeat left top;
-	clear: both;
+	height:240px;
+	margin:0px auto 15px auto;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color:#404040;
 }
-/*Header Menu*/
+
 #topmenu {
 	display:block;
 	list-style:none;
@@ -26,9 +26,11 @@ body{
 	background-color:black;
 	position: fixed;
 }
+	
 #topmenu li {
 	display:inline;
 }
+	
 #topmenu a {
 	display:block;
 	float:left;
@@ -38,44 +40,52 @@ body{
 	padding:9px 15px 0px 15px;
 	text-align:center;
 }
+	
 #topmenu a, #topmenu a:visited, #topmenu a:active {
 	color:#FFFFFF;
 }
+	
 #topmenu a:hover{
 	color:#ffffff;
 	background-color: #B52E10;
 }
+	
 #topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
 	color:#FFFFFF;
 	background-color: #B42D0F;
 }
-
-/*Content*/
+	
 #content {
-	background-color: #FFFFFF;
+	background-color: #808080;
 }
+	
 #mainpage {
 	width:700px;
 	float:left;
 	padding:5px 5px 5px 0px;
 	height:auto
 }
+	
 #mainpage p {
 	line-height:22px;
 	margin:10px 0px 22px 0px;
 	text-align: justify;
 }
+	
 #mainpage blockquote {
 	background:#efefef;
 	display:block; 
 	margin:5px;
 	font:Georgia, "Times New Roman", Times, serif; 
-	font-style:italic;}
+	font-style:italic;
+}
+	
 h1, h2, h3, h4, h5 {
-	color:#A52A2A;
+	color:#f2f2f2;
 	font-weight:bold;
 	font-family: Arial, Helvetica, sans-serif;
 }
+	
 #mainpage h1 {
 	font-size:24px;
 }
@@ -92,7 +102,6 @@ h1, h2, h3, h4, h5 {
 #mainpage h5 {
 	font-size:16px;}
 
-/*footer*/
 #footer {
 	margin:0 auto;
 	width:685px;
@@ -109,20 +118,24 @@ h1, h2, h3, h4, h5 {
 #topbar{
 	height:78px;
 }
+	
 table {
-border-spacing: 5px;
+   	 width: 300px;
+   	 background-color: black;
+   	 border: 1px solid transparent;
+}
+th, td {
+   	padding: 5px;
+  	text-align: left;
+	color: black;
+   	border: 1px solid transparent;
 }
 
-table, th, td {
-border:1px solid red;
-padding: 15px;	
-}
 th {
-text-align: left;
+   	background-color: #404040;
+    	height: 30px;
 }
 
-table#t1 {
-width: 75%;
-background-color: yellow;
-border: 1px;
-}
+td {
+	background-color: #595959;
+	}
