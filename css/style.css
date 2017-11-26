@@ -129,11 +129,12 @@ th, td {
 	color: black;
    	border: 1px solid transparent;
 	}
-td {
-	background-color: #595959;
-	}
 
 th {
    	background-color: #404040;
     	height: 30px;
+	}
+
+td {
+	background-color: #595959;
 	}
